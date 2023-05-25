@@ -1,0 +1,189 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+ body {
+     font-family: 'Anton', sans-serif;
+     display: flex;
+     justify-content: center;
+     font-size: 25px;
+     background: linear-gradient(to left, #2c3e50, #fd746c);
+ }
+
+ .container {
+    background: red;
+     height: 950px;
+     width: 700px;
+     text-align: center;
+     border: solid 3px;
+     border-radius: 1%;
+ }
+#tela{
+    margin: auto;
+    background-image: url(https://i.pinimg.com/originals/33/ac/6a/33ac6af8e90054568ab47ad0ef2d02a2.png);
+    background-size: 155%;
+    background-color: gray;
+    border: solid 15px rgb(219, 214, 214);
+    width: 500px;
+    height: 430px;
+    border-radius: 10px;
+
+}
+ .img {
+    width: 12.5rem;
+    margin-bottom: 5%;
+    margin-bottom: 50px;
+ height: 17rem;
+ background-color: #21212100;
+ border-radius: 1rem;
+ border: none;
+ transition: all 0.4s ease-in;
+ box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+ }
+ .img:hover {
+    transform: translateY(-1.5rem);
+    border: #f2295bf0 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+ }
+
+ input {
+     max-width: 404px;
+     background-color: #f5f5f5;
+     color: #242424;
+     padding: .15rem .5rem;
+     margin-top: 5%;
+     margin-bottom: 2%;
+     min-height: 40px;
+     border-radius: 4px;
+     outline: none;
+     border: none;
+     line-height: 1.15;
+     box-shadow: 0px 10px 20px -18px;
+ }
+
+ input:focus {
+     border-bottom: 2px solid #5b5fc7;
+     border-radius: 4px 4px 2px 2px;
+ }
+
+ input:hover {
+     outline: 1px solid lightgrey;
+ }
+
+ .buscar {
+     padding: 15px 25px;
+     border: unset;
+     border-radius: 15px;
+     color: #212121;
+     z-index: 1;
+     background: #e8e8e8;
+     position: relative;
+     font-weight: 1000;
+     font-size: 13px;
+     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+     transition: all 250ms;
+     overflow: hidden;
+ }
+
+ .buscar::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 0;
+     border-radius: 15px;
+     background-color: #212121;
+     z-index: -1;
+     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+     transition: all 250ms
+ }
+
+ .buscar:hover {
+     color: #e8e8e8;
+ }
+
+ .buscar:hover::before {
+     width: 100%;
+ }
+
+ .pro {
+     --width: 140px;
+     --timing: 1s;
+     border: 0;
+     width: var(--width);
+     padding-block: 1em;
+     color: #fff;
+     font-weight: bold;
+     background: rgb(64, 192, 87);
+     transition: all 0.2s;
+     border-radius: 3px;
+     margin-right: 20px
+ }
+
+ .pro:hover {
+     background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+     animation: var(--timing) linear dance6123 infinite;
+     transform: scale(1.1) translateY(-1px);
+ }
+
+ @keyframes dance6123 {
+     to {
+         background-position: var(--width);
+     }
+ }
+
+ .ant {
+     --width: 140px;
+     --timing: 2s;
+     border: 0;
+     width: var(--width);
+     padding-block: 1em;
+     margin-left: -20px;
+     color: #fff;
+     font-weight: bold;
+     background: rgb(64, 192, 87);
+     transition: all 0.2s;
+     border-radius: 3px;
+ }
+
+ .ant:hover {
+     background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+     animation: var(--timing) linear dance6123 infinite;
+     transform: scale(1.1) translateY(-1px);
+ }
+
+ @keyframes dance6123 {
+     to {
+         background-position: var(--width);
+     }
+ }
+
+ .paragrafo{
+    margin: auto;
+    margin-top: 1%;
+    background-color: #2c3e50;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    margin-bottom: 10px;
+    color: white;
+ }
+
+ .opcao{
+    margin: 200px;
+ }
+
+ h1{
+    color: #fff;
+    border-bottom: solid 4px;
+    width: 500px;
+    margin-left: 100px;
+ }
+ h2{
+    background-color: #2c3e5093;
+    width: 250px;
+    margin: 40px auto;
+    border-radius: 10px;
+ }
